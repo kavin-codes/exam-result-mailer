@@ -88,15 +88,16 @@ A Flask-based automation tool that reads student credentials from an Excel sheet
 pip install -r requirements.txt
 ```
 
-### ⚙️ Create `.env` file
+###📦 Requirements.txt
 
-Create a `.env` file like this:
+You’ll also need to include this requirements.txt file:
 
-```env
-EMAIL_USER=your_email@example.com
-EMAIL_PASS=your_email_password_or_app_password
-PORTAL_URL=https://college-portal.in/results
-```
+Flask
+selenium
+openpyxl
+python-dotenv
+Pillow
+
 
 > ✅ **Note**: Use an app-specific password if using Gmail.
 
