@@ -92,7 +92,7 @@ pip install -r requirements.txt
 
 You’ll also need to include this requirements.txt file:
 
-Flask
+Flask/n
 selenium
 openpyxl
 python-dotenv
