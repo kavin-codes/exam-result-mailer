@@ -92,10 +92,14 @@ pip install -r requirements.txt
 
 You’ll also need to include this requirements.txt file:
 
-Flask/n
+Flask
+
 selenium
+
 openpyxl
+
 python-dotenv
+
 Pillow
 
 
