@@ -49,6 +49,14 @@ A Flask-based automation tool that reads student credentials from an Excel sheet
 
 └── README.md                  # Project documentation
 
+
+
+ 📌sample photo
+
+
+
+ 
+
 ## ⚙️ How It Works
 
 1. **Upload Excel File**  
@@ -106,8 +114,21 @@ openpyxl
 python-dotenv
 
 Pillow
+    or 
+    
+✅ Required Python Packages
+Install all of them using this command:
 
+bash
+pip install flask selenium pillow openpyxl
 
+Or install them one by one:
+
+Package	Purpose
+Flask	For web application backend, routing, and file upload UI
+Selenium	For browser automation to login, navigate, and capture results
+Pillow (PIL)	For enhancing or resizing screenshots
+OpenPyXL	For reading Excel sheets (student credentials and emails)
 > ✅ **Note**: Use an app-specific password if using Gmail.
 
 ### 🚀 Run the App
