@@ -38,15 +38,16 @@ A Flask-based automation tool that reads student credentials from an Excel sheet
 
 
 📦exam-result-mailer/
-├── static/screenshots/     # Stores result screenshots
 
-├── templates/index.html    # Upload & result page
+├── static/screenshots/        # Stores result screenshots
 
-├── app.py                  # Main Flask app
+├── templates/index.html       # Upload & result page
 
-├── requirements.txt        # Dependencies
+├── app.py                     # Main Flask app
 
-└── README.md               # Project documentation
+├── requirements.txt          # Dependencies
+
+└── README.md                  # Project documentation
 
 ## ⚙️ How It Works
 
