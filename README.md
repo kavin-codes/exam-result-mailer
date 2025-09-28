@@ -1,3 +1,5 @@
+![Security Notice](https://img.shields.io/badge/⚠️-Sensitive%20Code%20Removed-red)
+
 📤 Exam Result Mailer
 
 A Python automation tool to capture and email student exam results using Excel credentials. Built with Flask, Selenium, and Python, this project automates the process of logging into a result portal, taking high-quality screenshots of exam results, and emailing them to students securely.
@@ -7,6 +9,8 @@ This script was originally developed for retrieving exam results from Anna Unive
 The actual university website URL has been removed for privacy and security reasons.
 Replace TARGET_WEBSITE_URL with the intended URL in your secure environment.
 Educational purpose only — do not use for unauthorized scraping or illegal activities.
+
+⚠️ CAPTCHA automation logic removed from public repo for security and ethical reasons. Full implementation available upon request for authorized educational use.
 
 📌 Features
 
