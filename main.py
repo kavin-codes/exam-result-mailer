@@ -1,3 +1,15 @@
+"""
+🚨 Disclaimer:
+
+This automation script was originally developed for retrieving exam results from Anna University. 
+For security and privacy reasons, the actual university website URL has been removed. 
+You can replace `TARGET_WEBSITE_URL` with the intended URL when running in your own secure environment.
+TARGET_WEBSITE_URL= anna university resukt webiste .
+Note: Always ensure you have proper authorization before automating logins or scraping any website.
+"""
+
+
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -29,13 +41,17 @@ if not credentials:
 
 print(f"✅ Loaded {len(credentials)} credentials.")
 
-# ✅ Setup Chrome
-service = Service("E:/automation software/chromedriver-win64 (1)/chromedriver-win64/chromedriver.exe")
+# ✅ Setup Chrome (update path to your local chromedriver)
+chrome_driver_path = "PATH_TO_YOUR_CHROMEDRIVER"  # <-- Replace this with your chromedriver path insall based on your chrome version
+service = Service(chrome_driver_path)
 driver = webdriver.Chrome(service=service)
 driver.maximize_window()
-driver.get("https://coe.annauniv.edu/home/")
-wait = WebDriverWait(driver, 10)
 
+# ✅ Open the target website (replace with your URL)
+target_url = "TARGET_WEBSITE_URL"  # <-- Replace this with your website URL||  
+driver.get(target_url)
+
+wait = WebDriverWait(driver, 10)
 reader = easyocr.Reader(['en'], gpu=False)
 max_retries = 5
 
