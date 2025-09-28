@@ -77,24 +77,23 @@ for idx, (username, password) in enumerate(credentials, start=1):
             captcha_image_path = f"captcha_{username}.png"
             captcha_element.screenshot(captcha_image_path)
 
-            # ✅ Preprocess CAPTCHA
-            img = Image.open(captcha_image_path)
-            img = img.convert("L")
-            img = img.filter(ImageFilter.MedianFilter(size=3))
-            img = ImageOps.autocontrast(img, cutoff=2)
-            img = ImageEnhance.Sharpness(img).enhance(1.5)
-            img.save(captcha_image_path)
+            # -------------------------------
+# CAPTCHA handling removed
+# -------------------------------
+# NOTE: For security & ethical reasons, the CAPTCHA OCR/automation code
+# has been removed from this public repository.
+# Replace the following manual input with your private solver module:
+#
+#   # from private_captcha_handler import solve_captcha
+#   # captcha_text = solve_captcha(captcha_image_path)
+#
+# For demo/testing, use manual input:
+captcha_text = input("Enter CAPTCHA (manually): ")
+captcha_input = driver.find_element(By.ID, "security_code_student")
+captcha_input.clear()
+captcha_input.send_keys(captcha_text)
+# -------------------------------
 
-            # ✅ OCR
-            results = reader.readtext(captcha_image_path, detail=0,
-                                      allowlist="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
-            captcha_text = ''.join(results).replace(' ', '')
-            captcha_text = ''.join(filter(str.isalnum, captcha_text))
-            print("   🧠 CAPTCHA Text:", captcha_text)
-
-            captcha_input = driver.find_element(By.ID, "security_code_student")
-            captcha_input.clear()
-            captcha_input.send_keys(captcha_text)
 
             # ✅ Login
             login_button = driver.find_element(By.XPATH, "(//input[@id='gos'])[2]")
@@ -143,3 +142,4 @@ for idx, (username, password) in enumerate(credentials, start=1):
         print(f"   ❌ Failed to login for user {username} after {max_retries} attempts.")
 
 print("\n🚀 Process finished for all users. Browser stays open at the last user’s results page.")
+
