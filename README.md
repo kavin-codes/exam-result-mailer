@@ -66,6 +66,10 @@ WEB INTERFACE PAGE:
 <img width="1920" height="1020" alt="image" src="https://github.com/user-attachments/assets/03005a55-5640-4da2-8d41-b56f771892fe" />
 AFTER THE AUTOMATION:
 <img width="1920" height="956" alt="image" src="https://github.com/user-attachments/assets/2bb0e0e0-a060-4a4f-9743-a900845ad8a8" />
+
+TERMINAL PANEL:
+<img width="1095" height="177" alt="Screenshot 2025-09-28 194207" src="https://github.com/user-attachments/assets/b1b2d144-5f72-41c0-af5b-aeeee116d6f3" />
+
  
 
 ⚙️ How It Works
